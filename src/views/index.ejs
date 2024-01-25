@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/navigation') %>
+
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="/img/mejor.png" alt="" class="w-25">
+            <h1 class="display-1 my-5 text-lowercase fw-bold">aguero</h1>
+            <a href="/about" class="btn btn-primary w-25 bg-dark">About Me</a>
+
+            <main class="text-center d-flex justify-content-center align-items-center mt-5">
+                <section>
+                    <p>This is an example of a website made with <%= x %> ! 
+                        <br> To make this website I use Express.js, the most popular framework for Node.js.
+                        <br>And also I use bootstrap for a fast design.
+                        <br>If you wanna read about me, you can click the button!
+                        <br>also you can send me a messaege in the contact section! </p>
+                </section>
+            </main>
+        </div>
+    </header>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
